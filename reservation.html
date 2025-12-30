@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Aurum Fine Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">AURUM</a>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="reservation.html" class="nav-link active">Reservation</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <button class="reservation-btn" onclick="window.location.href='#reservation-form'">Reservations</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="page-hero-subtitle">Reserve Your Experience</div>
+            <h1 class="page-hero-title">Make a Reservation</h1>
+            <p class="page-hero-description">Secure your table for an unforgettable dining experience at Aurum Fine Dining. We look forward to welcoming you.</p>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation-section">
+        <div class="container reservation-container">
+            <!-- Reservation Information -->
+            <div class="reservation-info">
+                <h2 class="section-title">Reservation Details</h2>
+                <p class="section-subtitle">We recommend booking in advance to secure your preferred time.</p>
+                
+                <div class="reservation-details">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Operating Hours</h4>
+                            <p>Tuesday - Sunday: 6:00 PM - 11:00 PM<br>Closed on Mondays</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Group Size</h4>
+                            <p>We accommodate parties of 1-10 guests. For larger groups, please contact us directly for private dining options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Menu Options</h4>
+                            <p>À la carte menu available Tuesday through Sunday. Tasting menus require 48-hour advance notice.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Special Requests</h4>
+                            <p>Please inform us of any dietary restrictions, allergies, or special occasions when making your reservation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Online Booking Section -->
+                <div class="online-booking">
+                    <h4><i class="fas fa-calendar-check"></i> Online Booking</h4>
+                    <p>For instant reservations, book directly through our online reservation system. See real-time availability and confirm your table immediately.</p>
+                    <div class="booking-buttons">
+                        <button class="booking-btn primary" id="onlineBookingBtn">
+                            <i class="fas fa-external-link-alt"></i> Book Online Now
+                        </button>
+                        <button class="booking-btn" id="phoneBookingBtn">
+                            <i class="fas fa-phone"></i> Call to Book: (212) 555-1234
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Private Consultation Section -->
+                <div class="private-consultation">
+                    <h4><i class="fas fa-calendar-plus"></i> Schedule a Private Event Consultation</h4>
+                    <p>Book a consultation with our Events Director to discuss your private event needs. Select an available time slot that works for you.</p>
+                    <button class="consultation-btn" id="privateEventBtn">
+                        <i class="far fa-calendar-alt"></i> Book Event Consultation
+                    </button>
+                </div>
+                
+                <div class="reservation-note">
+                    <h4>Important Information</h4>
+                    <p>We hold tables for 15 minutes past the reservation time. For reservations of 6 or more guests, a credit card is required to secure your booking. Cancellations must be made at least 24 hours in advance to avoid a $50 per person charge.</p>
+                </div>
+            </div>
+            
+            <!-- Reservation Form -->
+            <div class="reservation-form-container" id="reservation-form">
+                <h3 class="form-title">Book Your Table</h3>
+                <form id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="date">Reservation Date *</label>
+                            <div style="position: relative;">
+                                <input type="text" id="date" class="form-input date-picker" placeholder="Select date" required>
+                                <i class="far fa-calendar-alt" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); color: var(--gold); pointer-events: none;"></i>
+                            </div>
+                            <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button type="button" class="quick-date-btn" data-days="1">Tomorrow</button>
+                                <button type="button" class="quick-date-btn" data-days="2">In 2 Days</button>
+                                <button type="button" class="quick-date-btn" data-days="7">Next Week</button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="time">Reservation Time *</label>
+                            <select id="time" class="form-select" required>
+                                <option value="">Select Time</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="guests">Number of Guests *</label>
+                            <select id="guests" class="form-select" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                                <option value="9">9 Guests</option>
+                                <option value="10">10 Guests</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="occasion">Special Occasion</label>
+                            <select id="occasion" class="form-select">
+                                <option value="">None</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="engagement">Engagement</option>
+                                <option value="business">Business Dinner</option>
+                                <option value="other">Other Celebration</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="requests">Special Requests / Dietary Restrictions</label>
+                        <textarea id="requests" class="form-textarea" placeholder="Please let us know about any dietary restrictions, allergies, or special requests..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="far fa-paper-plane"></i> Submit Reservation Request
+                    </button>
+                    
+                    <div class="form-note">
+                        <p>You will receive a confirmation email within 24 hours. For same-day reservations, please call us at (212) 555-1234.</p>
+                        <p style="margin-top: 15px; color: var(--gold); font-weight: 500;">
+                            <i class="fas fa-bolt" style="margin-right: 8px;"></i>
+                            For instant booking: 
+                            <button id="instantBookingBtn" style="background: none; border: none; color: var(--gold); text-decoration: underline; margin-left: 5px; font-size: inherit; cursor: pointer; font-weight: 500;">
+                                Book Now on Our Platform
+                            </button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Selection Modal -->
+    <div class="platform-modal" id="platformModal">
+        <div class="platform-modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3>Choose Your Booking Method</h3>
+            <p>Select how you would like to make your reservation. We'll transfer your details to your preferred platform.</p>
+            
+            <div class="platform-options">
+                <div class="platform-option" data-platform="opentable">
+                    <i class="fas fa-external-link-alt"></i>
+                    <h4>OpenTable</h4>
+                    <p>Most popular booking platform with instant confirmation and real-time availability</p>
+                </div>
+                
+                <div class="platform-option" data-platform="resy">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Resy</h4>
+                    <p>Premium dining reservations with exclusive access and priority seating</p>
+                </div>
+                
+                <div class="platform-option" data-platform="direct">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Direct Booking</h4>
+                    <p>Book directly with us for personalized service and special offers</p>
+                </div>
+            </div>
+            
+            <div class="modal-buttons">
+                <button class="booking-btn" id="confirmPlatformBtn" disabled>Continue to Booking</button>
+                <button class="booking-btn primary" id="cancelPlatformBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Private Events Section -->
+    <section class="private-events-section">
+        <div class="container private-events-container">
+            <h2 class="section-title">Private Events & Dining</h2>
+            <p class="private-events-description">Aurum offers exclusive private dining experiences for special occasions, corporate events, and intimate gatherings. Our dedicated events team will work with you to create a bespoke menu and experience.</p>
+            
+            <div class="event-types">
+                <div class="event-type">
+                    <div class="event-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Weddings & Celebrations</h3>
+                    <p>Celebrate life's milestones in our elegant private dining room, accommodating up to 40 guests for seated dinners.</p>
+                </div>
+                
+                <div class="event-type">
+                    <div class="event-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Impress clients and colleagues with curated business dinners, product launches, and executive meetings.</p>
+                </div>
+                
+                <div class="event-type">
+                    <div class="event-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Wine Dinners</h3>
+                    <p>Exclusive multi-course dinners paired with exceptional wines from our sommelier's curated selection.</p>
+                </div>
+            </div>
+            
+            <!-- Private Booking Section -->
+            <div class="private-consultation" style="max-width: 800px; margin: 0 auto;">
+                <h4><i class="fas fa-crown"></i> Private Event Booking</h4>
+                <p>For private events of 10+ guests, exclusive wine dinners, or special celebrations, schedule a consultation with our Events Director. We'll create a custom experience tailored to your needs.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; margin-top: 25px; flex-wrap: wrap;">
+                    <button class="consultation-btn" id="privateEventConsultationBtn">
+                        <i class="far fa-calendar-alt"></i> Schedule Consultation
+                    </button>
+                    <button class="booking-btn" style="padding: 14px 32px;" id="emailEventsBtn">
+                        <i class="fas fa-envelope"></i> Email Events Team
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Information</h2>
+                <p class="section-subtitle">We're here to assist with your reservation and answer any questions.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>123 Culinary Avenue<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+12125551234">(212) 555-1234</a><br>Reservations & General Inquiries</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:reservations@aurum.com">reservations@aurum.com</a><br>For reservation inquiries</p>
+                            <p style="margin-top: 10px;"><a href="mailto:events@aurum.com">events@aurum.com</a><br>For private event inquiries</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Online Booking</h4>
+                            <p><button id="footerBookingLink" style="background: none; border: none; color: var(--beige); text-decoration: none; font-size: inherit; cursor: pointer; padding: 0;">Online Booking Portal</button><br>For instant reservations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map & Directions -->
+            <div class="reservation-form-container">
+                <h3 class="form-title">Find Us</h3>
+                <div style="width: 100%; height: 400px; background-color: #1a1a1a; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div style="text-align: center; padding: 40px;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 60px; color: var(--gold); margin-bottom: 20px;"></i>
+                        <h4 style="color: var(--white); margin-bottom: 15px; font-size: 20px;">Aurum Fine Dining</h4>
+                        <p style="color: var(--beige); margin-bottom: 10px;">123 Culinary Avenue</p>
+                        <p style="color: var(--beige); margin-bottom: 25px;">New York, NY 10001</p>
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <a href="contact.html" style="background-color: transparent; color: var(--gold); text-decoration: none; border: 1px solid var(--gold); padding: 12px 24px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; border-radius: 4px; font-weight: 500;">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                            <button id="mapBookNowBtn" style="background-color: var(--gold); color: var(--black); text-decoration: none; border: 1px solid var(--gold); padding: 12px 24px; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                                <i class="fas fa-calendar-check"></i> Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 20px; color: var(--gray); font-size: 14px;">
+                    <i class="fas fa-subway" style="margin-right: 8px;"></i>
+                    Accessible via subway lines 1, 2, 3, A, C, E at 34th Street-Penn Station
+                    <br>
+                    <i class="fas fa-parking" style="margin-right: 8px; margin-top: 5px;"></i>
+                    Valet parking available from 5:30 PM
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">AURUM</div>
+                    <p style="color: var(--beige); margin-bottom: 20px;">An exquisite fine dining experience where culinary art meets soul.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <div class="hours">
+                        <p><strong>Tuesday - Sunday</strong></p>
+                        <p>6:00 PM - 11:00 PM</p>
+                        <p style="margin-top: 15px;"><strong>Private Events</strong></p>
+                        <p>Available on Mondays</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Book Online</h4>
+                    <ul class="footer-links">
+                        <li><a href="#reservation-form">Reservation Form</a></li>
+                        <li><button id="footerOnlineBooking" style="background: none; border: none; color: var(--beige); text-decoration: none; font-size: 15px; cursor: pointer; padding: 0; text-align: left;">Online Booking Portal</button></li>
+                        <li><button id="footerPrivateEvents" style="background: none; border: none; color: var(--beige); text-decoration: none; font-size: 15px; cursor: pointer; padding: 0; text-align: left;">Private Events</button></li>
+                        <li><a href="tel:+12125551234">Call to Book</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Aurum Fine Dining Restaurant. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendar Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script>
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '15px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                header.style.padding = '25px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+        
+        // Calendar Integration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Flatpickr Calendar
+            const datePicker = flatpickr("#date", {
+                minDate: "today",
+                dateFormat: "m/d/Y",
+                disable: [
+                    function(date) {
+                        // Disable Mondays (restaurant is closed)
+                        return (date.getDay() === 1);
+                    }
+                ],
+                onChange: function(selectedDates, dateStr, instance) {
+                    // Update the date format display
+                    if (selectedDates.length > 0) {
+                        const formattedDate = selectedDates[0].toLocaleDateString('en-US', {
+                            weekday: 'long',
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        console.log('Selected date:', formattedDate);
+                    }
+                },
+                locale: {
+                    firstDayOfWeek: 0 // Sunday
+                }
+            });
+            
+            // Quick date buttons
+            document.querySelectorAll('.quick-date-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const days = parseInt(this.getAttribute('data-days'));
+                    const futureDate = new Date();
+                    futureDate.setDate(futureDate.getDate() + days);
+                    
+                    // Skip Mondays (closed)
+                    if (futureDate.getDay() === 1) {
+                        futureDate.setDate(futureDate.getDate() + 1);
+                    }
+                    
+                    datePicker.setDate(futureDate);
+                    
+                    // Highlight the active quick button
+                    document.querySelectorAll('.quick-date-btn').forEach(btn => {
+                        btn.style.backgroundColor = 'transparent';
+                        btn.style.color = 'var(--beige)';
+                        btn.style.border = '1px solid var(--beige)';
+                    });
+                    
+                    this.style.backgroundColor = 'var(--gold)';
+                    this.style.color = 'var(--black)';
+                    this.style.border = '1px solid var(--gold)';
+                });
+            });
+            
+            // Style for quick date buttons
+            document.querySelectorAll('.quick-date-btn').forEach(button => {
+                button.style.backgroundColor = 'transparent';
+                button.style.color = 'var(--beige)';
+                button.style.border = '1px solid var(--beige)';
+                button.style.padding = '8px 15px';
+                button.style.borderRadius = '4px';
+                button.style.cursor = 'pointer';
+                button.style.fontSize = '14px';
+                button.style.transition = 'all 0.3s ease';
+                button.style.fontFamily = "'Montserrat', sans-serif";
+                
+                button.addEventListener('mouseover', function() {
+                    if (this.style.backgroundColor !== 'var(--gold)') {
+                        this.style.backgroundColor = 'rgba(212, 175, 55, 0.1)';
+                        this.style.borderColor = 'var(--gold)';
+                    }
+                });
+                
+                button.addEventListener('mouseout', function() {
+                    if (this.style.backgroundColor !== 'var(--gold)') {
+                        this.style.backgroundColor = 'transparent';
+                        this.style.borderColor = 'var(--beige)';
+                    }
+                });
+            });
+            
+            // Set tomorrow as default date
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            
+            // Skip if tomorrow is Monday
+            if (tomorrow.getDay() === 1) {
+                tomorrow.setDate(tomorrow.getDate() + 1);
+            }
+            
+            datePicker.setDate(tomorrow);
+            
+            // Highlight tomorrow button
+            const tomorrowBtn = document.querySelector('.quick-date-btn[data-days="1"]');
+            if (tomorrowBtn) {
+                tomorrowBtn.style.backgroundColor = 'var(--gold)';
+                tomorrowBtn.style.color = 'var(--black)';
+                tomorrowBtn.style.border = '1px solid var(--gold)';
+            }
+        });
+        
+        // ==================== PLATFORM SELECTION MODAL ====================
+        const platformModal = document.getElementById('platformModal');
+        const onlineBookingBtn = document.getElementById('onlineBookingBtn');
+        const instantBookingBtn = document.getElementById('instantBookingBtn');
+        const mapBookNowBtn = document.getElementById('mapBookNowBtn');
+        const footerBookingLink = document.getElementById('footerBookingLink');
+        const footerOnlineBooking = document.getElementById('footerOnlineBooking');
+        const modalClose = document.getElementById('modalClose');
+        const cancelPlatformBtn = document.getElementById('cancelPlatformBtn');
+        const confirmPlatformBtn = document.getElementById('confirmPlatformBtn');
+        const phoneBookingBtn = document.getElementById('phoneBookingBtn');
+        const privateEventBtn = document.getElementById('privateEventBtn');
+        const privateEventConsultationBtn = document.getElementById('privateEventConsultationBtn');
+        const emailEventsBtn = document.getElementById('emailEventsBtn');
+        const footerPrivateEvents = document.getElementById('footerPrivateEvents');
+        
+        let selectedPlatform = null;
+        
+        // Platform selection functionality
+        document.querySelectorAll('.platform-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove selected class from all options
+                document.querySelectorAll('.platform-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked option
+                this.classList.add('selected');
+                selectedPlatform = this.getAttribute('data-platform');
+                confirmPlatformBtn.disabled = false;
+                confirmPlatformBtn.style.backgroundColor = 'var(--gold)';
+                confirmPlatformBtn.style.color = 'var(--black)';
+                confirmPlatformBtn.textContent = `Continue to ${this.querySelector('h4').textContent}`;
+            });
+        });
+        
+        // Show platform modal
+        function showPlatformModal() {
+            platformModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Hide platform modal
+        function hidePlatformModal() {
+            platformModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            // Reset selection
+            selectedPlatform = null;
+            document.querySelectorAll('.platform-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            confirmPlatformBtn.disabled = true;
+            confirmPlatformBtn.textContent = 'Continue to Booking';
+            confirmPlatformBtn.style.backgroundColor = '';
+            confirmPlatformBtn.style.color = '';
+        }
+        
+        // Event listeners for showing modal
+        onlineBookingBtn.addEventListener('click', showPlatformModal);
+        instantBookingBtn.addEventListener('click', showPlatformModal);
+        mapBookNowBtn.addEventListener('click', showPlatformModal);
+        footerBookingLink.addEventListener('click', showPlatformModal);
+        footerOnlineBooking.addEventListener('click', showPlatformModal);
+        
+        // Event listeners for hiding modal
+        modalClose.addEventListener('click', hidePlatformModal);
+        cancelPlatformBtn.addEventListener('click', hidePlatformModal);
+        
+        // Close modal when clicking outside
+        platformModal.addEventListener('click', function(e) {
+            if (e.target === platformModal) {
+                hidePlatformModal();
+            }
+        });
+        
+        // Confirm platform selection
+        confirmPlatformBtn.addEventListener('click', function() {
+            if (!selectedPlatform) return;
+            
+            hidePlatformModal();
+            
+            // Get form data if available
+            const formData = {
+                firstName: document.getElementById('firstName')?.value || '',
+                lastName: document.getElementById('lastName')?.value || '',
+                email: document.getElementById('email')?.value || '',
+                phone: document.getElementById('phone')?.value || '',
+                date: document.getElementById('date')?.value || '',
+                time: document.getElementById('time')?.value || '',
+                guests: document.getElementById('guests')?.value || '',
+                occasion: document.getElementById('occasion')?.value || '',
+                requests: document.getElementById('requests')?.value || ''
+            };
+            
+            // Redirect to appropriate platform with data
+            switch(selectedPlatform) {
+                case 'opentable':
+                    redirectToOpenTable(formData);
+                    break;
+                case 'resy':
+                    redirectToResy(formData);
+                    break;
+                case 'direct':
+                    showDirectBookingSuccess(formData);
+                    break;
+            }
+        });
+        
+        // ==================== REDIRECT FUNCTIONS ====================
+        function redirectToOpenTable(formData) {
+            // OpenTable booking URL with parameters
+            let url = 'https://www.opentable.com/r/aurum-fine-dining-new-york';
+            
+            // Add parameters if available
+            if (formData.date && formData.time && formData.guests) {
+                const date = new Date(formData.date);
+                const formattedDate = date.toISOString().split('T')[0];
+                const time = formData.time.replace(':', '');
+                url += `?dateTime=${formattedDate}T${time}&covers=${formData.guests}`;
+                
+                if (formData.firstName && formData.lastName) {
+                    url += `&firstName=${encodeURIComponent(formData.firstName)}&lastName=${encodeURIComponent(formData.lastName)}`;
+                }
+                if (formData.email) {
+                    url += `&email=${encodeURIComponent(formData.email)}`;
+                }
+                if (formData.phone) {
+                    url += `&phone=${encodeURIComponent(formData.phone)}`;
+                }
+            }
+            
+            window.open(url, '_blank');
+        }
+        
+        function redirectToResy(formData) {
+            // Resy booking URL with parameters
+            let url = 'https://resy.com/cities/ny/aurum-fine-dining';
+            
+            // Add parameters if available
+            if (formData.date && formData.guests) {
+                const date = new Date(formData.date);
+                const formattedDate = date.toISOString().split('T')[0];
+                url += `?date=${formattedDate}&seats=${formData.guests}`;
+                
+                if (formData.firstName && formData.lastName) {
+                    url += `&firstName=${encodeURIComponent(formData.firstName)}&lastName=${encodeURIComponent(formData.lastName)}`;
+                }
+                if (formData.email) {
+                    url += `&email=${encodeURIComponent(formData.email)}`;
+                }
+                if (formData.phone) {
+                    url += `&phone=${encodeURIComponent(formData.phone)}`;
+                }
+            }
+            
+            window.open(url, '_blank');
+        }
+        
+        function showDirectBookingSuccess(formData) {
+            // Show a success message for direct booking
+            const successMessage = `
+                <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--gold); padding: 40px; margin-top: 20px; border-radius: 8px;">
+                    <h4 style="color: var(--gold); font-size: 28px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; justify-content: center;">
+                        <i class="fas fa-check-circle"></i> Direct Booking Request Submitted!
+                    </h4>
+                    <p style="color: var(--beige); margin-bottom: 20px; font-size: 18px; text-align: center;">
+                        Thank you for choosing to book directly with Aurum Fine Dining.
+                    </p>
+                    
+                    <div style="background-color: rgba(10, 10, 10, 0.7); padding: 30px; border-radius: 8px; margin: 25px 0; border: 1px solid rgba(212, 175, 55, 0.3);">
+                        <h5 style="color: var(--white); margin-bottom: 20px; font-size: 22px; text-align: center;">Your Booking Details</h5>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 20px;">
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Name</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formData.firstName} ${formData.lastName}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Contact</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formData.phone}<br>${formData.email}</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Date</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formData.date ? new Date(formData.date).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }) : 'To be confirmed'}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Time</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formData.time || 'To be confirmed'}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Guests</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formData.guests || 'To be confirmed'}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 25px; background-color: rgba(10, 10, 10, 0.5); border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+                        <h5 style="color: var(--gold); margin-bottom: 15px; font-size: 20px; text-align: center;">Next Steps</h5>
+                        <ul style="color: var(--beige); margin-left: 20px; line-height: 1.8; font-size: 16px;">
+                            <li><strong>Within 2 hours:</strong> Our reservation team will contact you to confirm availability</li>
+                            <li><strong>Priority seating:</strong> You'll receive the best available table</li>
+                            <li><strong>Special offers:</strong> Direct bookings receive complimentary champagne for special occasions</li>
+                            <li><strong>Flexible policy:</strong> 48-hour cancellation instead of 24 hours</li>
+                        </ul>
+                        
+                        <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(212, 175, 55, 0.3); text-align: center;">
+                            <p style="color: var(--beige); margin-bottom: 15px; font-size: 16px;">
+                                <i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--gold);"></i>
+                                For immediate assistance: <a href="tel:+12125551234" style="color: var(--gold); text-decoration: none; font-weight: 600;">(212) 555-1234</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            const formContainer = document.querySelector('.reservation-form-container');
+            formContainer.innerHTML = successMessage;
+            formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        // ==================== PRIVATE EVENT FUNCTIONALITY ====================
+        function showPrivateEventForm() {
+            const privateEventForm = `
+                <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--gold); padding: 40px; margin-top: 20px; border-radius: 8px;">
+                    <h4 style="color: var(--gold); font-size: 28px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; justify-content: center;">
+                        <i class="fas fa-crown"></i> Private Event Consultation
+                    </h4>
+                    <p style="color: var(--beige); margin-bottom: 30px; font-size: 18px; text-align: center;">
+                        Please provide your details and our Events Director will contact you within 24 hours to schedule a consultation.
+                    </p>
+                    
+                    <form id="privateEventForm" style="max-width: 600px; margin: 0 auto;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">First Name *</label>
+                                <input type="text" required style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Last Name *</label>
+                                <input type="text" required style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Email *</label>
+                                <input type="email" required style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Phone *</label>
+                                <input type="tel" required style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Company / Organization</label>
+                            <input type="text" style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Event Date</label>
+                                <input type="date" style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                            <div>
+                                <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Number of Guests</label>
+                                <input type="number" min="10" style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Event Type</label>
+                            <select style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                                <option value="">Select Event Type</option>
+                                <option value="wedding">Wedding Celebration</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="birthday">Birthday Celebration</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="wine">Wine Dinner</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 30px;">
+                            <label style="display: block; color: var(--beige); margin-bottom: 8px; font-size: 15px;">Event Details / Special Requests</label>
+                            <textarea rows="4" style="width: 100%; padding: 12px; background-color: rgba(10, 10, 10, 0.7); border: 1px solid rgba(212, 175, 55, 0.2); color: var(--white); font-size: 16px; font-family: 'Montserrat', sans-serif; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <button type="submit" style="background-color: var(--gold); color: var(--black); border: none; padding: 16px 40px; font-size: 16px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; font-weight: 600; border-radius: 4px; display: inline-flex; align-items: center; gap: 10px;">
+                                <i class="far fa-calendar-alt"></i> Submit Consultation Request
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+                        <p style="color: var(--beige); text-align: center; font-size: 15px;">
+                            <i class="fas fa-info-circle" style="margin-right: 8px; color: var(--gold);"></i>
+                            Our Events Director will contact you to discuss menu options, pricing, and available dates. 
+                            For immediate assistance, email <a href="mailto:events@aurum.com" style="color: var(--gold); text-decoration: none;">events@aurum.com</a>
+                        </p>
+                    </div>
+                </div>
+            `;
+            
+            const privateConsultationSection = document.querySelector('.private-consultation');
+            privateConsultationSection.innerHTML = privateEventForm;
+            privateConsultationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Add form submission handler
+            document.getElementById('privateEventForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                showPrivateEventSuccess();
+            });
+        }
+        
+        function showPrivateEventSuccess() {
+            const successMessage = `
+                <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--gold); padding: 40px; margin-top: 20px; border-radius: 8px;">
+                    <h4 style="color: var(--gold); font-size: 28px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; justify-content: center;">
+                        <i class="fas fa-check-circle"></i> Consultation Request Submitted!
+                    </h4>
+                    
+                    <div style="background-color: rgba(10, 10, 10, 0.7); padding: 30px; border-radius: 8px; margin: 25px 0; border: 1px solid rgba(212, 175, 55, 0.3); text-align: center;">
+                        <i class="fas fa-crown" style="font-size: 60px; color: var(--gold); margin-bottom: 20px;"></i>
+                        <h5 style="color: var(--white); margin-bottom: 15px; font-size: 24px;">Thank You for Your Interest</h5>
+                        <p style="color: var(--beige); margin-bottom: 20px; font-size: 17px;">
+                            Our Events Director will contact you within 24 hours to discuss your private event needs.
+                        </p>
+                        
+                        <div style="display: inline-grid; grid-template-columns: 1fr; gap: 15px; margin-top: 25px;">
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Next Steps</p>
+                                <ul style="color: var(--beige); text-align: left; line-height: 1.8; font-size: 15px; margin-left: 20px;">
+                                    <li>Initial consultation call (30 minutes)</li>
+                                    <li>Venue tour and menu tasting</li>
+                                    <li>Custom proposal with pricing</li>
+                                    <li>Contract signing and deposit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 25px; background-color: rgba(10, 10, 10, 0.5); border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); text-align: center;">
+                        <p style="color: var(--beige); margin-bottom: 15px; font-size: 16px;">
+                            <i class="fas fa-envelope" style="margin-right: 10px; color: var(--gold);"></i>
+                            Email: <a href="mailto:events@aurum.com" style="color: var(--gold); text-decoration: none; font-weight: 600;">events@aurum.com</a>
+                        </p>
+                        <p style="color: var(--beige); font-size: 16px;">
+                            <i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--gold);"></i>
+                            Phone: <a href="tel:+12125551234" style="color: var(--gold); text-decoration: none; font-weight: 600;">(212) 555-1234 ext. 2</a>
+                        </p>
+                    </div>
+                </div>
+            `;
+            
+            const privateConsultationSection = document.querySelector('.private-consultation');
+            privateConsultationSection.innerHTML = successMessage;
+        }
+        
+        // ==================== EVENT LISTENERS ====================
+        // Private event buttons
+        privateEventBtn.addEventListener('click', showPrivateEventForm);
+        privateEventConsultationBtn.addEventListener('click', showPrivateEventForm);
+        footerPrivateEvents.addEventListener('click', showPrivateEventForm);
+        
+        // Email events team
+        emailEventsBtn.addEventListener('click', function() {
+            window.location.href = 'mailto:events@aurum.com?subject=Private Event Inquiry';
+        });
+        
+        // Phone booking functionality
+        phoneBookingBtn.addEventListener('click', function() {
+            window.location.href = 'tel:+12125551234';
+        });
+        
+        // Form submission
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+            const occasion = document.getElementById('occasion').value;
+            const requests = document.getElementById('requests').value;
+            
+            // Validate required fields
+            if (!firstName || !lastName || !email || !phone || !date || !time || !guests) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Validate date is not in the past
+            const today = new Date().toISOString().split('T')[0];
+            const selectedDate = new Date(date);
+            if (selectedDate < new Date(today)) {
+                alert('Please select a future date for your reservation.');
+                return;
+            }
+            
+            // Show success message
+            const formattedDate = new Date(date).toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            const formattedTime = time === '18:00' ? '6:00 PM' :
+                                 time === '18:30' ? '6:30 PM' :
+                                 time === '19:00' ? '7:00 PM' :
+                                 time === '19:30' ? '7:30 PM' :
+                                 time === '20:00' ? '8:00 PM' :
+                                 time === '20:30' ? '8:30 PM' :
+                                 time === '21:00' ? '9:00 PM' :
+                                 time === '21:30' ? '9:30 PM' :
+                                 time === '22:00' ? '10:00 PM' : time;
+            
+            // Create success message
+            const successMessage = `
+                <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--gold); padding: 40px; margin-top: 20px; border-radius: 8px;">
+                    <h4 style="color: var(--gold); font-size: 28px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; justify-content: center;">
+                        <i class="fas fa-check-circle"></i> Reservation Request Submitted!
+                    </h4>
+                    <p style="color: var(--beige); margin-bottom: 20px; font-size: 18px; text-align: center;">
+                        Thank you, <strong>${firstName} ${lastName}</strong>. Your reservation request has been received.
+                    </p>
+                    
+                    <div style="background-color: rgba(10, 10, 10, 0.7); padding: 30px; border-radius: 8px; margin: 25px 0; border: 1px solid rgba(212, 175, 55, 0.3);">
+                        <h5 style="color: var(--white); margin-bottom: 20px; font-size: 22px; text-align: center;">Reservation Details</h5>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 20px;">
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Date</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formattedDate}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Time</p>
+                                <p style="color: var(--beige); font-weight: 500;">${formattedTime}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Guests</p>
+                                <p style="color: var(--beige); font-weight: 500;">${guests} ${guests === '1' ? 'person' : 'people'}</p>
+                            </div>
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Status</p>
+                                <p style="color: var(--beige); font-weight: 500;">Pending Confirmation</p>
+                            </div>
+                        </div>
+                        
+                        ${occasion ? `
+                        <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px; margin-top: 15px;">
+                            <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Occasion</p>
+                            <p style="color: var(--beige); font-weight: 500;">${document.getElementById('occasion').options[document.getElementById('occasion').selectedIndex].text}</p>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    <p style="color: var(--beige); margin-top: 20px; font-size: 16px; text-align: center;">
+                        You will receive a confirmation email at <strong style="color: var(--gold);">${email}</strong> within 24 hours.<br>
+                        If you need to make changes, please call us at <a href="tel:+12125551234" style="color: var(--gold); text-decoration: none; font-weight: 600;">(212) 555-1234</a>.
+                    </p>
+                    
+                    <div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+                        <p style="color: var(--gold); font-weight: 600; margin-bottom: 20px; font-size: 18px; text-align: center;">
+                            <i class="fas fa-bolt" style="margin-right: 10px;"></i>
+                            For instant confirmation:
+                        </p>
+                        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                            <button onclick="showPlatformModal()" style="flex: 1; min-width: 250px; background-color: var(--gold); color: var(--black); text-decoration: none; padding: 16px 24px; border-radius: 6px; text-align: center; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 12px; transition: all 0.3s ease; border: none; cursor: pointer; font-size: 16px; font-family: 'Montserrat', sans-serif;">
+                                <i class="fas fa-external-link-alt"></i> Book Online Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Replace form with success message
+            const formContainer = document.querySelector('.reservation-form-container');
+            formContainer.innerHTML = successMessage;
+            formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mainNav.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effects to booking buttons
+        document.querySelectorAll('.booking-btn, .consultation-btn').forEach(button => {
+            if (button.tagName === 'BUTTON') {
+                button.addEventListener('mouseenter', function() {
+                    if (this.classList.contains('primary')) {
+                        this.style.boxShadow = '0 8px 25px rgba(212, 175, 55, 0.3)';
+                    } else {
+                        this.style.boxShadow = '0 8px 20px rgba(212, 175, 55, 0.2)';
+                    }
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

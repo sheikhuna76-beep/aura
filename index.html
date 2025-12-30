@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurum | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">AURUM</a>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="reservation.html" class="nav-link">Reservation</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <button class="reservation-btn" onclick="window.location.href='reservation.html'">Reservations</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content text-center">
+            <div class="hero-subtitle">Fine Dining Experience</div>
+            <h1 class="hero-title">Where Culinary<br>Art Meets <span>Soul</span></h1>
+            <p class="hero-description">An exquisite journey through flavors, crafted with passion and precision by our award-winning culinary team.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="window.location.href='reservation.html'">Book a Table</button>
+                <button class="btn-secondary" onclick="window.location.href='menu.html'">Explore Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section" id="story">
+        <div class="container">
+            <h2 class="section-title">A Legacy of Excellence</h2>
+            <div class="story-container">
+                <div class="story-image"></div>
+                <div class="story-content">
+                    <h3>Our Story</h3>
+                    <p>Nestled in the heart of the city, Aurum represents the pinnacle of modern gastronomy. Since our founding in 2015, we have been dedicated to creating extraordinary dining experiences that celebrate the finest ingredients and time-honored techniques.</p>
+                    <p>Our philosophy is simple: respect for ingredients, mastery of technique, and an unwavering commitment to exceeding expectations. Every dish tells a story, every evening creates a memory.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Michelin Stars</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Culinary Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Slider -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonial-header">
+                <div class="testimonial-subtitle">TESTIMONIALS</div>
+                <h2 class="testimonial-title">Guest Experiences</h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"An extraordinary culinary journey. Every dish was a masterpiece of flavor and presentation. Aurum has redefined what fine dining means in this city."</p>
+                            <div class="testimonial-author">Victoria Chen</div>
+                            <div class="testimonial-role">FOOD CRITIC, GOURMET MAGAZINE</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The attention to detail is astonishing. From the ambiance to the service and, of course, the food - everything was perfect. A truly memorable evening."</p>
+                            <div class="testimonial-author">James Robertson</div>
+                            <div class="testimonial-role">RESTAURANT REVIEWER</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Chef Laurent's tasting menu was a revelation. Each course built upon the last, creating a symphony of flavors that I'll remember for years to come."</p>
+                            <div class="testimonial-author">Sophia Martinez</div>
+                            <div class="testimonial-role">FOOD & TRAVEL WRITER</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider-dots" id="sliderDots">
+                        <div class="slider-dot active" data-slide="0"></div>
+                        <div class="slider-dot" data-slide="1"></div>
+                        <div class="slider-dot" data-slide="2"></div>
+                    </div>
+                    
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="swipe-hint">
+                    <i class="fas fa-hand-point-up"></i> 
+                    Swipe left or right to view more testimonials
+                    <i class="fas fa-hand-point-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section with Cooking Chef Image -->
+    <section class="section chef-section">
+        <div class="container">
+            <div class="chef-container">
+                <div class="chef-content">
+                    <h2>Our Culinary Master</h2>
+                    <h3 class="chef-name">Chef Marcus Laurent</h3>
+                    <div class="chef-title">Executive Chef</div>
+                    <blockquote class="chef-quote">"Cooking is an act of love. Each plate is my canvas, and every ingredient has a voice waiting to be heard."</blockquote>
+                    <p>With over two decades of culinary experience and multiple international awards, Chef Marcus Laurent brings his visionary approach to every dish served at Aurum. His dedication to culinary perfection has earned the restaurant its prestigious Michelin stars.</p>
+                    <button class="btn-primary" onclick="window.location.href='about.html'" style="margin-top: 20px;">Learn More About Us</button>
+                </div>
+                <div class="chef-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title">Make a Reservation</h2>
+            <p class="cta-subtitle">Join us for an unforgettable evening. We recommend booking in advance to ensure the perfect table for your occasion.</p>
+            <button class="btn-primary" onclick="window.location.href='reservation.html'">Book Your Experience</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">AURUM</div>
+                    <p style="color: var(--beige); margin-bottom: 20px;">An exquisite fine dining experience where culinary art meets soul.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <div class="hours">
+                        <p><strong>Tuesday - Sunday</strong></p>
+                        <p>6:00 PM - 11:00 PM</p>
+                        <p style="margin-top: 15px;"><strong>Private Events</strong></p>
+                        <p>Available on Mondays</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li>123 Culinary Avenue</li>
+                        <li>New York, NY 10001</li>
+                        <li style="margin-top: 10px;">(212) 555-1234</li>
+                        <li>reservations@aurum.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Aurum Fine Dining Restaurant. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '15px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                header.style.padding = '25px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mainNav.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Testimonial Slider Functionality
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const sliderDots = document.querySelectorAll('.slider-dot');
+        
+        let currentSlide = 0;
+        const totalSlides = 3;
+        
+        // Function to update slider position
+        function updateSlider() {
+            testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update active dot
+            sliderDots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+        
+        // Next button click
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        });
+        
+        // Previous button click
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+        
+        // Dot click
+        sliderDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentSlide = parseInt(dot.getAttribute('data-slide'));
+                updateSlider();
+            });
+        });
+        
+        // Touch swipe functionality
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        testimonialTrack.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        testimonialTrack.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        // Mouse drag functionality for desktop
+        let mouseDownX = 0;
+        let mouseUpX = 0;
+        
+        testimonialTrack.addEventListener('mousedown', (e) => {
+            mouseDownX = e.clientX;
+        });
+        
+        testimonialTrack.addEventListener('mouseup', (e) => {
+            mouseUpX = e.clientX;
+            handleMouseSwipe();
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next slide
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                } else {
+                    // Swipe right - previous slide
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                }
+                updateSlider();
+            }
+        }
+        
+        function handleMouseSwipe() {
+            const swipeThreshold = 50;
+            const diff = mouseDownX - mouseUpX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next slide
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                } else {
+                    // Swipe right - previous slide
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                }
+                updateSlider();
+            }
+        }
+        
+        // Auto-rotate testimonials every 7 seconds (optional)
+        let autoSlideInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }, 7000);
+        
+        // Pause auto-rotation when user interacts
+        testimonialTrack.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+        
+        testimonialTrack.addEventListener('mouseleave', () => {
+            autoSlideInterval = setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            }, 7000);
+        });
+        
+        // Button functionality
+        document.querySelectorAll('.btn-primary, .btn-secondary, .reservation-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Check if button has onclick already set
+                if (!this.hasAttribute('onclick')) {
+                    if (this.classList.contains('btn-primary') || this.classList.contains('reservation-btn')) {
+                        window.location.href = 'reservation.html';
+                    } else if (this.classList.contains('btn-secondary')) {
+                        window.location.href = 'menu.html';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

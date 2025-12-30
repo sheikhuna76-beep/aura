@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Aurum Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">AURUM</a>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="reservation.html" class="nav-link">Reservation</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <button class="reservation-btn" onclick="window.location.href='reservation.html'">Reservations</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="page-hero-subtitle">Culinary Artistry</div>
+            <h1 class="page-hero-title">Our Menu</h1>
+            <p class="page-hero-description">A symphony of flavors crafted with passion and precision. Discover our seasonal offerings and signature tasting menus.</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <div class="menu-navigation">
+        <div class="container menu-nav-container">
+            <button class="menu-nav-btn active" data-target="a-la-carte">À La Carte</button>
+            <button class="menu-nav-btn" data-target="tasting-menu">Tasting Menu</button>
+            <button class="menu-nav-btn" data-target="wine-pairing">Wine Pairing</button>
+            <button class="menu-nav-btn" data-target="starters">Starters</button>
+            <button class="menu-nav-btn" data-target="mains">Main Courses</button>
+            <button class="menu-nav-btn" data-target="desserts">Desserts</button>
+        </div>
+    </div>
+
+    <!-- À La Carte Menu Section -->
+    <section id="a-la-carte" class="menu-section active-menu-section">
+        <div class="container">
+            <h2 class="section-title">À La Carte Menu</h2>
+            <p class="section-subtitle">Select individual dishes from our seasonal offerings</p>
+            
+            <!-- Starters -->
+            <div class="menu-category">
+                <h3 class="category-title">Starters & Appetizers</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Sea Urchin & Caviar</h4>
+                            <p class="menu-item-description">Santa Barbara sea urchin, Kaluga caviar, cauliflower cream, and gold leaf</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Seasonal</span>
+                                <span class="menu-item-tag">Chef's Signature</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$38</div>
+                    </div>
+                    
+                  <div class="menu-item">
+    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+    <div class="menu-item-content">
+        <h4 class="menu-item-title">Foie Gras Terrine</h4>
+        <p class="menu-item-description">Hudson Valley foie gras terrine with spiced fig compote, toasted brioche, and port reduction</p>
+        <div class="menu-item-highlights">
+            <span class="menu-item-tag">Rich</span>
+        </div>
+    </div>
+    <div class="menu-item-price">$42</div>
+</div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Heirloom Tomato Salad</h4>
+                            <p class="menu-item-description">Five varieties of heirloom tomatoes, burrata cheese, basil oil, aged balsamic, and smoked salt</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Vegetarian</span>
+                                <span class="menu-item-tag">Seasonal</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$26</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Lobster Bisque</h4>
+                            <p class="menu-item-description">Maine lobster bisque with truffle crème fraîche and chive oil</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Gluten Free</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$32</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Courses -->
+            <div class="menu-category">
+                <h3 class="category-title">Main Courses</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Dry-Aged Ribeye</h4>
+                            <p class="menu-item-description">35-day dry-aged USDA Prime ribeye, bone marrow butter, truffled pommes purée, and broccolini</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Signature</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$68</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Atlantic Halibut</h4>
+                            <p class="menu-item-description">Pan-seared halibut with saffron fennel broth, mussels, and confit fingerling potatoes</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Seasonal</span>
+                                <span class="menu-item-tag">Gluten Free</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$52</div>
+                    </div>
+                    
+                   <div class="menu-item">
+    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+    <div class="menu-item-content">
+        <h4 class="menu-item-title">Duck à l'Orange</h4>
+        <p class="menu-item-description">Roasted Magret duck breast with blood orange gastrique, roasted baby vegetables, and duck confit croquette</p>
+        <div class="menu-item-highlights">
+            <span class="menu-item-tag">Chef's Special</span>
+        </div>
+    </div>
+    <div class="menu-item-price">$58</div>
+</div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Wild Mushroom Risotto</h4>
+                            <p class="menu-item-description">Arborio rice with foraged mushrooms, Parmigiano-Reggiano, white truffle oil, and herb salad</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Vegetarian</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$46</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3 class="category-title">Desserts</h3>
+                <div class="menu-items-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Chocolate Soufflé</h4>
+                            <p class="menu-item-description">Valrhona chocolate soufflé with vanilla bean ice cream and chocolate sauce</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Must Order Ahead</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$22</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=765&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Crème Brûlée Trio</h4>
+                            <p class="menu-item-description">Vanilla bean, lavender honey, and matcha green tea crème brûlée</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Gluten Free</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$18</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=765&q=80');"></div>
+                        <div class="menu-item-content">
+                            <h4 class="menu-item-title">Seasonal Fruit Tart</h4>
+                            <p class="menu-item-description">Almond frangipane tart with seasonal fruits, Chantilly cream, and edible flowers</p>
+                            <div class="menu-item-highlights">
+                                <span class="menu-item-tag">Seasonal</span>
+                            </div>
+                        </div>
+                        <div class="menu-item-price">$16</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starters Section (hidden by default) -->
+    <section id="starters" class="menu-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Starters & Appetizers</h2>
+            <p class="section-subtitle">Begin your culinary journey with our exquisite starters</p>
+            
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Sea Urchin & Caviar</h4>
+                        <p class="menu-item-description">Santa Barbara sea urchin, Kaluga caviar, cauliflower cream, and gold leaf</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Seasonal</span>
+                            <span class="menu-item-tag">Chef's Signature</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$38</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Foie Gras Terrine</h4>
+                        <p class="menu-item-description">Hudson Valley foie gras terrine with spiced fig compote, toasted brioche, and port reduction</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Rich</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$42</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Heirloom Tomato Salad</h4>
+                        <p class="menu-item-description">Five varieties of heirloom tomatoes, burrata cheese, basil oil, aged balsamic, and smoked salt</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Vegetarian</span>
+                            <span class="menu-item-tag">Seasonal</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$26</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Lobster Bisque</h4>
+                        <p class="menu-item-description">Maine lobster bisque with truffle crème fraîche and chive oil</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Gluten Free</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$32</div>
+                </div>
+                
+               <div class="menu-item">
+    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+    <div class="menu-item-content">
+        <h4 class="menu-item-title">Hamachi Crudo</h4>
+        <p class="menu-item-description">Yellowtail hamachi with yuzu kosho, pickled radish, avocado, and crispy shallots</p>
+        <div class="menu-item-highlights">
+            <span class="menu-item-tag">Light</span>
+            <span class="menu-item-tag">Gluten Free</span>
+        </div>
+    </div>
+    <div class="menu-item-price">$28</div>
+</div>
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Truffle Arancini</h4>
+                        <p class="menu-item-description">Black truffle and mushroom risotto balls with saffron aioli and Parmigiano-Reggiano</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$24</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Courses Section (hidden by default) -->
+    <section id="mains" class="menu-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Main Courses</h2>
+            <p class="section-subtitle">Indulge in our signature main dishes</p>
+            
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Dry-Aged Ribeye</h4>
+                        <p class="menu-item-description">35-day dry-aged USDA Prime ribeye, bone marrow butter, truffled pommes purée, and broccolini</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Signature</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$68</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Atlantic Halibut</h4>
+                        <p class="menu-item-description">Pan-seared halibut with saffron fennel broth, mussels, and confit fingerling potatoes</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Seasonal</span>
+                            <span class="menu-item-tag">Gluten Free</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$52</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Duck à l'Orange</h4>
+                        <p class="menu-item-description">Roasted Magret duck breast with blood orange gastrique, roasted baby vegetables, and duck confit croquette</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Chef's Special</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$58</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Wild Mushroom Risotto</h4>
+                        <p class="menu-item-description">Arborio rice with foraged mushrooms, Parmigiano-Reggiano, white truffle oil, and herb salad</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$46</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Herb-Crusted Lamb Rack</h4>
+                        <p class="menu-item-description">New Zealand lamb rack with mint pesto, roasted garlic polenta, and rosemary jus</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Gluten Free</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$64</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Truffle Pasta</h4>
+                        <p class="menu-item-description">Handmade tagliatelle with black truffle, Parmigiano-Reggiano, and brown butter</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Vegetarian</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$44</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section (hidden by default) -->
+    <section id="desserts" class="menu-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Desserts</h2>
+            <p class="section-subtitle">A sweet conclusion to your dining experience</p>
+            
+            <div class="menu-items-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Chocolate Soufflé</h4>
+                        <p class="menu-item-description">Valrhona chocolate soufflé with vanilla bean ice cream and chocolate sauce</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Must Order Ahead</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$22</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=765&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Crème Brûlée Trio</h4>
+                        <p class="menu-item-description">Vanilla bean, lavender honey, and matcha green tea crème brûlée</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Gluten Free</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$18</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=736&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Seasonal Fruit Tart</h4>
+                        <p class="menu-item-description">Almond frangipane tart with seasonal fruits, Chantilly cream, and edible flowers</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Seasonal</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$16</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Tiramisu Classico</h4>
+                        <p class="menu-item-description">Traditional Italian tiramisu with espresso-soaked ladyfingers and mascarpone cream</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Classic</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$14</div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');"></div>
+                    <div class="menu-item-content">
+                        <h4 class="menu-item-title">Cheese Selection</h4>
+                        <p class="menu-item-description">Curated selection of artisanal cheeses with fruit compote, honey, and walnut bread</p>
+                        <div class="menu-item-highlights">
+                            <span class="menu-item-tag">Savory</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">$24</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Tasting Menu Section -->
+    <section id="tasting-menu" class="menu-section tasting-menu-section" style="display: none;">
+        <div class="container tasting-menu-container">
+            <h2 class="section-title">Chef's Tasting Menu</h2>
+            <p class="tasting-menu-intro">Our tasting menus are thoughtfully curated journeys through seasonal flavors and culinary artistry. Each menu is paired with optional wine selections curated by our sommelier.</p>
+            
+            <div class="tasting-menu-options">
+                <div class="tasting-menu-option">
+                    <h3>Discovery Menu</h3>
+                    <div class="tasting-menu-price">$145</div>
+                    <p class="tasting-menu-details">A 6-course introduction to Chef Laurent's culinary philosophy</p>
+                    <ul class="tasting-menu-list">
+                        <li>Amuse-bouche: Caviar & Sea Urchin</li>
+                        <li>Heirloom Tomato & Burrata</li>
+                        <li>Foie Gras Terrine</li>
+                        <li>Wild Mushroom Risotto</li>
+                        <li>Atlantic Halibut</li>
+                        <li>Chocolate Soufflé</li>
+                    </ul>
+                    <div class="menu-cta-buttons">
+                        <button class="btn-primary">Add Wine Pairing (+$75)</button>
+                    </div>
+                </div>
+                
+                <div class="tasting-menu-option">
+                     <h3>Signature Menu</h3>
+                    <div class="tasting-menu-price">$195</div>
+                    <p class="tasting-menu-details">An 8-course celebration of our signature dishes and seasonal ingredients</p>
+                    <ul class="tasting-menu-list">
+                        <li>Amuse-bouche: Oyster & Cucumber</li>
+                        <li>Hamachi Crudo</li>
+                        <li>Truffle Arancini</li>
+                        <li>Lobster Bisque</li>
+                        <li>Intermezzo: Lemon Sorbet</li>
+                        <li>Dry-Aged Ribeye</li>
+                        <li>Cheese Selection</li>
+                        <li>Crème Brûlée Trio</li>
+                    </ul>
+                    <div class="menu-cta-buttons">
+                        <button class="btn-primary">Add Wine Pairing (+$95)</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dietary-info">
+                <h4><i class="fas fa-info-circle"></i> Tasting Menu Information</h4>
+                <p>Our tasting menus require 48-hour advance notice and are served to the entire table. Please inform us of any dietary restrictions when making your reservation. Wine pairings are curated by our sommelier and can be adjusted for non-alcoholic alternatives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Pairing Section -->
+    <section id="wine-pairing" class="menu-section wine-pairing-section" style="display: none;">
+        <div class="container wine-pairing-container">
+            <h2 class="section-title">Wine Pairings</h2>
+            <p class="wine-pairing-intro">Our sommelier has curated exceptional wine pairings to complement each course. Explore our selection by the glass or bottle.</p>
+            
+            <div class="wine-pairing-options">
+                <div class="wine-pairing-option">
+                    <div class="wine-pairing-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h4>By The Glass</h4>
+                    <p>Select from our rotating collection of wines by the glass, perfect for exploring different pairings.</p>
+                    <div class="wine-pairing-price">$14 - $28</div>
+                </div>
+                
+                <div class="wine-pairing-option">
+                    <div class="wine-pairing-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h4>By The Bottle</h4>
+                    <p>Our extensive bottle selection features rare vintages and exceptional producers from around the world.</p>
+                    <div class="wine-pairing-price">$65 - $450</div>
+                </div>
+                
+                <div class="wine-pairing-option">
+                    <div class="wine-pairing-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4>Sommelier's Selection</h4>
+                    <p>Allow our sommelier to create a custom pairing journey tailored to your menu selections.</p>
+                    <div class="wine-pairing-price">Market Price</div>
+                </div>
+            </div>
+            
+            <div class="menu-cta-buttons">
+                <button class="btn-primary">View Full Wine List</button>
+                <button class="btn-secondary">Book Wine Tasting</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu CTA Section -->
+    <section class="menu-cta-section">
+        <div class="container menu-cta-content">
+            <h3 class="menu-cta-title">Experience Our Menu</h3>
+            <p class="menu-cta-description">Join us for an unforgettable culinary journey. Our seasonal menus change regularly to showcase the finest ingredients at their peak.</p>
+            <div class="menu-cta-buttons">
+                <a href="reservation.html" class="btn-primary">Book Your Table</a>
+                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dietary Information -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="dietary-info">
+                <h4><i class="fas fa-leaf"></i> Dietary Information</h4>
+                <p>Our culinary team is dedicated to accommodating dietary restrictions and allergies. Please inform us of any requirements when making your reservation. Many dishes can be modified to be gluten-free, vegetarian, or vegan. For severe allergies, we recommend contacting us in advance to ensure a safe dining experience.</p>
+                
+                <div class="dietary-icons">
+                    <div class="dietary-icon">
+                        <i class="fas fa-seedling"></i>
+                        <span>Vegetarian Options</span>
+                    </div>
+                    <div class="dietary-icon">
+                        <i class="fas fa-leaf"></i>
+                        <span>Vegan Options</span>
+                    </div>
+                    <div class="dietary-icon">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Gluten-Free Options</span>
+                    </div>
+                    <div class="dietary-icon">
+                        <i class="fas fa-allergies"></i>
+                        <span>Allergy Accommodations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">AURUM</div>
+                    <p style="color: var(--beige); margin-bottom: 20px;">An exquisite fine dining experience where culinary art meets soul.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <div class="hours">
+                        <p><strong>Tuesday - Sunday</strong></p>
+                        <p>6:00 PM - 11:00 PM</p>
+                        <p style="margin-top: 15px;"><strong>Private Events</strong></p>
+                        <p>Available on Mondays</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Menu Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#a-la-carte">À La Carte Menu</a></li>
+                        <li><a href="#tasting-menu">Tasting Menus</a></li>
+                        <li><a href="#wine-pairing">Wine List</a></li>
+                        <li><a href="#dietary-info">Dietary Options</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Aurum Fine Dining Restaurant. All rights reserved. | 
+                <a href="#" style="color: var(--gray); text-decoration: none;">Privacy Policy</a> | 
+                <a href="#" style="color: var(--gray); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '15px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                header.style.padding = '25px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+        
+        // Menu Navigation Functionality
+        const menuNavButtons = document.querySelectorAll('.menu-nav-btn');
+        const menuSections = document.querySelectorAll('.menu-section');
+        
+        menuNavButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Get target section
+                const targetId = button.getAttribute('data-target');
+                
+                // Remove active class from all buttons
+                menuNavButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Hide all menu sections
+                menuSections.forEach(section => {
+                    section.style.display = 'none';
+                });
+                
+                // Show target section
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                    
+                    // Scroll to section with offset for fixed header and menu nav
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const menuNavHeight = document.querySelector('.menu-navigation').offsetHeight;
+                    const offset = headerHeight + menuNavHeight + 20;
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Initialize with À La Carte section active
+        document.addEventListener('DOMContentLoaded', () => {
+            const aLaCarteSection = document.getElementById('a-la-carte');
+            const aLaCarteBtn = document.querySelector('.menu-nav-btn[data-target="a-la-carte"]');
+            
+            // Hide all sections except à la carte
+            menuSections.forEach(section => {
+                if (section.id !== 'a-la-carte') {
+                    section.style.display = 'none';
+                }
+            });
+            
+            // Set active button
+            menuNavButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            aLaCarteBtn.classList.add('active');
+            
+            // Show à la carte section
+            aLaCarteSection.style.display = 'block';
+        });
+        
+        // Reservation button functionality
+        document.querySelector('.reservation-btn').addEventListener('click', () => {
+            window.location.href = 'reservation.html';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mainNav.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 150,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Button functionality
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent.includes('Wine Pairing')) {
+                    alert('Wine pairing would be added to your tasting menu selection. Please mention this when making your reservation.');
+                } else if (this.textContent.includes('View Full Wine List')) {
+                    alert('The full wine list would open here. For now, please ask your server for our complete wine selection.');
+                } else if (this.textContent.includes('Book Your Table')) {
+                    window.location.href = 'reservation.html';
+                } else {
+                    window.location.href = 'reservation.html';
+                }
+            });
+        });
+        
+        document.querySelectorAll('.btn-secondary').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent.includes('Book Wine Tasting')) {
+                    alert('Wine tasting booking would open here. Please call (212) 555-1234 to book a wine tasting experience.');
+                } else if (this.textContent.includes('Contact Us')) {
+                    window.location.href = 'contact.html';
+                }
+            });
+        });
+        
+        // Add subtle animation to menu items on hover
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(5px)';
+                this.style.transition = 'transform 0.3s ease';
+                
+                // Add zoom effect to image
+                const image = this.querySelector('.menu-item-image');
+                if (image) {
+                    image.style.transform = 'scale(1.05)';
+                    image.style.transition = 'transform 0.3s ease';
+                }
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0)';
+                
+                // Reset image zoom
+                const image = this.querySelector('.menu-item-image');
+                if (image) {
+                    image.style.transform = 'scale(1)';
+                }
+            });
+        });
+        
+        // Add image loading animation
+        document.querySelectorAll('.menu-item-image').forEach(image => {
+            image.style.opacity = '0';
+            image.style.transition = 'opacity 0.5s ease';
+            
+            // Simulate image loading
+            setTimeout(() => {
+                image.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

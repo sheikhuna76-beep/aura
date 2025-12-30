@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Aurum Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">AURUM</a>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="reservation.html" class="nav-link">Reservation</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            
+            <button class="reservation-btn" onclick="window.location.href='reservation.html'">Reservations</button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="page-hero-subtitle">Get In Touch</div>
+            <h1 class="page-hero-title">Contact Us</h1>
+            <p class="page-hero-description">We're here to assist you with reservations, private events, and any inquiries. Reach out to us through any of the methods below.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <h2 class="section-title">Contact Information</h2>
+            <p class="section-subtitle">Multiple ways to reach our team</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>123 Culinary Avenue</p>
+                    <p>New York, NY 10001</p>
+                    <p>United States</p>
+                    <a href="#map" class="action-btn">View on Map</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><strong>Reservations:</strong></p>
+                    <a href="tel:+12125551234">(212) 555-1234</a>
+                    <p><strong>Private Events:</strong></p>
+                    <a href="tel:+12125551235">(212) 555-1235</a>
+                    <a href="tel:+12125551234" class="action-btn">Call Now</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><strong>Reservations:</strong></p>
+                    <a href="mailto:reservations@aurum.com">reservations@aurum.com</a>
+                    <p><strong>Private Events:</strong></p>
+                    <a href="mailto:events@aurum.com">events@aurum.com</a>
+                    <a href="#contact-form" class="action-btn">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Visit our restaurant in the heart of New York</p>
+            
+            <div class="map-container">
+                <!-- Map Placeholder with Styling -->
+                <div style="width: 100%; height: 100%; background-color: #1a1a1a; position: relative;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="map-overlay">
+                        <h3>Aurum Fine Dining</h3>
+                        <p>123 Culinary Avenue</p>
+                        <p>New York, NY 10001</p>
+                        <p>Between 5th & 6th Avenue</p>
+                        
+                        <div class="btn-group">
+                            <button class="btn primary" id="getDirectionsBtn">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </button>
+                            <button class="btn" onclick="window.location.href='reservation.html'">
+                                <i class="fas fa-calendar-check"></i> Book a Table
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="color: var(--beige); font-size: 16px;">
+                    <i class="fas fa-info-circle" style="margin-right: 8px; color: var(--gold);"></i>
+                    We recommend using public transportation as parking in the area is limited. Valet parking is available from 5:30 PM.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transportation Section -->
+    <section class="transportation-section">
+        <div class="container">
+            <h2 class="section-title">Getting Here</h2>
+            <p class="section-subtitle">Convenient transportation options</p>
+            
+            <div class="transport-grid">
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <h4>Subway</h4>
+                    <p>34th Street-Penn Station: 1, 2, 3, A, C, E lines<br>5-minute walk</p>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h4>Bus</h4>
+                    <p>M5, M7, M20, M34 buses stop within 2 blocks of the restaurant</p>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <h4>Taxi & Rideshare</h4>
+                    <p>Easily accessible via Uber, Lyft, or yellow taxi. Drop-off at main entrance.</p>
+                </div>
+                
+                <div class="transport-item">
+                    <div class="transport-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h4>Parking</h4>
+                    <p>Valet parking available from 5:30 PM. Nearby garages on 6th Avenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours-section">
+        <div class="container">
+            <h2 class="section-title">Hours of Operation</h2>
+            
+            <div class="hours-container">
+                <div class="hours-card">
+                    <h3>Dining Hours</h3>
+                    <div class="hours-row">
+                        <span class="day">Tuesday - Thursday</span>
+                        <span class="time">6:00 PM - 10:30 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Friday - Saturday</span>
+                        <span class="time">6:00 PM - 11:00 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Sunday</span>
+                        <span class="time">5:30 PM - 9:30 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Monday</span>
+                        <span class="time" style="color: var(--gold);">Closed</span>
+                    </div>
+                    
+                    <div class="hours-note">
+                        <h4>Last Seating</h4>
+                        <p>Last seating is 30 minutes before closing. Kitchen closes at the stated time.</p>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <h3>Contact Hours</h3>
+                    <div class="hours-row">
+                        <span class="day">Reservations Phone</span>
+                        <span class="time">10:00 AM - 8:00 PM</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Email Response</span>
+                        <span class="time">Within 24 hours</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Private Events</span>
+                        <span class="time">By appointment</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day">Wine Collection</span>
+                        <span class="time">Viewing by appointment</span>
+                    </div>
+                    
+                    <div class="hours-note">
+                        <h4>Holiday Hours</h4>
+                        <p>Special hours apply on major holidays. Please call ahead to confirm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is the dress code?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We maintain an elegant dress code to enhance the dining experience. Business casual or cocktail attire is recommended. Gentlemen are requested to wear collared shirts, and we kindly ask that no athletic wear, shorts, or flip-flops be worn.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you accommodate dietary restrictions?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our chefs can accommodate most dietary restrictions including vegetarian, vegan, gluten-free, and allergies. Please inform us of any dietary requirements when making your reservation so we can prepare accordingly. For severe allergies, we recommend calling ahead to speak with our chef.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your cancellation policy?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We require 24-hour notice for cancellations. For parties of 6 or more, a credit card is required to secure the reservation, and cancellations within 24 hours will incur a $50 per person charge. For private events, please refer to your contract for specific cancellation terms.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer valet parking?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, valet parking is available from 5:30 PM until closing for $25. There are also several parking garages within walking distance. We highly recommend using public transportation or rideshare services as parking in the area can be challenging during peak hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I bring my own wine?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have an extensive wine collection curated by our sommelier, but we do allow guests to bring their own wine with a $50 corkage fee per 750ml bottle, limited to two bottles per table. Please note that we cannot accommodate bottles that are already on our wine list.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you have private dining options?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer several private dining options accommodating from 10 to 40 guests. Our private dining room features a separate entrance, dedicated service staff, and customizable menus. For inquiries, please email events@aurum.com or call (212) 555-1235 to speak with our Events Director.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h3 class="form-title">Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" class="form-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="contactSubject">Subject *</label>
+                            <select id="contactSubject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Reservation Inquiry</option>
+                                <option value="private-event">Private Event Inquiry</option>
+                                <option value="feedback">Feedback & Reviews</option>
+                                <option value="press">Press & Media</option>
+                                <option value="careers">Career Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" class="form-textarea" placeholder="Please provide details about your inquiry..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="preferredContact">Preferred Contact Method</label>
+                        <select id="preferredContact" class="form-select">
+                            <option value="">No preference</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone Call</option>
+                            <option value="text">Text Message</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="far fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <div style="text-align: center; margin-top: 25px;">
+                        <p style="color: var(--gray); font-size: 14px;">
+                            <i class="fas fa-clock" style="margin-right: 8px;"></i>
+                            We aim to respond to all inquiries within 24 hours. For urgent matters, please call us at (212) 555-1234.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">AURUM</div>
+                    <p style="color: var(--beige); margin-bottom: 20px;">An exquisite fine dining experience where culinary art meets soul.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Hours</h4>
+                    <div class="hours">
+                        <p><strong>Tuesday - Sunday</strong></p>
+                        <p>6:00 PM - 11:00 PM</p>
+                        <p style="margin-top: 15px;"><strong>Private Events</strong></p>
+                        <p>Available on Mondays</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+                        <li><a href="mailto:reservations@aurum.com">reservations@aurum.com</a></li>
+                        <li><a href="#contact-form">Contact Form</a></li>
+                        <li><a href="#map">Get Directions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Aurum Fine Dining Restaurant. All rights reserved. | 
+                <a href="#" style="color: var(--gray); text-decoration: none;">Privacy Policy</a> | 
+                <a href="#" style="color: var(--gray); text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = mobileToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '15px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                header.style.padding = '25px 0';
+                header.style.backgroundColor = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+        
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current FAQ item
+                faqItem.classList.toggle('active');
+            });
+        });
+        
+        // Get Directions Button
+        document.getElementById('getDirectionsBtn').addEventListener('click', function() {
+            const address = '123+Culinary+Avenue+New+York+NY+10001';
+            const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${address}`;
+            
+            // Open in new tab
+            window.open(googleMapsUrl, '_blank');
+        });
+        
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            const preferredContact = document.getElementById('preferredContact').value;
+            
+            // Validate required fields
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Show success message
+            const successMessage = `
+                <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--gold); padding: 40px; margin-top: 20px; border-radius: 8px;">
+                    <h4 style="color: var(--gold); font-size: 28px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px; justify-content: center;">
+                        <i class="fas fa-check-circle"></i> Message Sent Successfully!
+                    </h4>
+                    
+                    <div style="background-color: rgba(10, 10, 10, 0.7); padding: 30px; border-radius: 8px; margin: 25px 0; border: 1px solid rgba(212, 175, 55, 0.3);">
+                        <h5 style="color: var(--white); margin-bottom: 20px; font-size: 22px; text-align: center;">Thank You, ${name}</h5>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Subject</p>
+                                <p style="color: var(--beige); font-weight: 500;">${document.getElementById('contactSubject').options[document.getElementById('contactSubject').selectedIndex].text}</p>
+                            </div>
+                            
+                            <div style="background-color: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 6px;">
+                                <p style="color: var(--gold); margin-bottom: 5px; font-size: 14px; font-weight: 600;">Contact Information</p>
+                                <p style="color: var(--beige); font-weight: 500;">
+                                    ${email}<br>
+                                    ${phone || 'Phone not provided'}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p style="color: var(--beige); margin-top: 20px; font-size: 16px; text-align: center;">
+                        We have received your message and will respond within 24 hours.
+                    </p>
+                    
+                    <div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(212, 175, 55, 0.3); text-align: center;">
+                        <p style="color: var(--beige); margin-bottom: 15px; font-size: 16px;">
+                            <i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--gold);"></i>
+                            For urgent matters: <a href="tel:+12125551234" style="color: var(--gold); text-decoration: none; font-weight: 600;">(212) 555-1234</a>
+                        </p>
+                        
+                        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 25px;">
+                            <button onclick="window.location.href='reservation.html'" style="background-color: var(--gold); color: var(--black); border: none; padding: 12px 24px; border-radius: 4px; font-weight: 600; cursor: pointer; font-size: 16px; font-family: 'Montserrat', sans-serif; display: inline-flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-calendar-check"></i> Make a Reservation
+                            </button>
+                            <button onclick="window.location.href='index.html'" style="background-color: transparent; color: var(--gold); border: 1px solid var(--gold); padding: 12px 24px; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 16px; font-family: 'Montserrat', sans-serif; display: inline-flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-home"></i> Return Home
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Replace form with success message
+            const formContainer = document.querySelector('.form-container');
+            formContainer.innerHTML = successMessage;
+            formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mainNav.classList.remove('active');
+                    const icon = mobileToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effects to buttons
+        document.querySelectorAll('.btn, .action-btn, .submit-btn').forEach(button => {
+            if (button.tagName === 'BUTTON' || button.tagName === 'A') {
+                button.addEventListener('mouseenter', function() {
+                    if (this.classList.contains('primary')) {
+                        this.style.boxShadow = '0 8px 25px rgba(212, 175, 55, 0.3)';
+                    } else {
+                        this.style.boxShadow = '0 8px 20px rgba(212, 175, 55, 0.2)';
+                    }
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
+                });
+            }
+        });
+        
+        // Initialize with one FAQ open
+        document.addEventListener('DOMContentLoaded', function() {
+            // Open first FAQ by default
+            const firstFaq = document.querySelector('.faq-item');
+            if (firstFaq) {
+                firstFaq.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
