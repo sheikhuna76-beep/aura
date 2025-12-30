@@ -152,6 +152,34 @@
             cursor: pointer;
             z-index: 1001;
         }
+        /* Mobile Menu Overlay */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    z-index: 999;
+}
+
+.mobile-overlay.active {
+    display: block;
+}
+
+/* Mobile close button */
+.mobile-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
         
         /* Hero Section - Centered */
         .hero {
@@ -687,64 +715,127 @@
         
        /* Add these styles BEFORE the media query (in the general CSS section) */
 
-/* Mobile Menu Overlay */
-.mobile-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 10, 10, 0.9);
-    z-index: 999;
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: flex;
+        background: none;
+        border: none;
+        color: var(--gold);
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+        padding: 5px;
+        width: 44px;
+        height: 44px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-toggle:hover {
+        background-color: rgba(212, 175, 55, 0.1);
+    }
+    
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--black);
+        flex-direction: column;
+        padding: 100px 30px 30px;
+        border-right: 1px solid rgba(212, 175, 55, 0.2);
+        gap: 0;
+        z-index: 1000;
+        transition: left 0.4s ease;
+        overflow-y: auto;
+    }
+    
+    .main-nav.active {
+        display: flex;
+        left: 0;
+    }
+    
+    .nav-link {
+        padding: 18px 0;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        width: 100%;
+        text-align: left;
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .nav-link:hover, .nav-link.active {
+        color: var(--gold);
+        padding-left: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Adjust header for mobile */
+    .header-container {
+        padding: 15px 20px;
+    }
+    
+    header {
+        padding: 15px 0;
+    }
+    
+    /* Home page specific mobile styles */
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .testimonial-card {
+        padding: 40px 30px;
+    }
+    
+    .testimonial-text {
+        font-size: 20px;
+    }
+    
+    .testimonial-text::before {
+        left: -10px;
+        font-size: 60px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .slider-controls {
+        margin-top: 40px;
+    }
+    
+    .slider-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
 }
 
-.mobile-overlay.active {
-    display: block;
-}
+/* For even smaller screens */
 
-/* Mobile close button */
-.mobile-close-btn {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background: none;
-    border: none;
-    color: var(--gold);
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-}
-
-/* Updated mobile menu styles - REPLACE the existing media query */
-/* Mobile Menu Overlay */
-.mobile-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 10, 10, 0.9);
-    z-index: 999;
-}
-
-.mobile-overlay.active {
-    display: block;
-}
-
-/* Mobile close button */
-.mobile-close-btn {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background: none;
-    border: none;
-    color: var(--gold);
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-}
 /* For even smaller screens */
 @media (max-width: 480px) {
     .main-nav {
@@ -760,6 +851,27 @@
         font-size: 24px;
         width: 40px;
         height: 40px;
+    }
+    
+    /* Keep existing 480px styles below */
+    .page-hero-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+    }
+    
+    .contact-card {
+        padding: 40px 25px;
+    }
+    
+    .hours-card {
+        padding: 30px 20px;
     }
 }
     </style>
@@ -782,7 +894,7 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             
-            <button class="reservation-btn" onclick="window.location.href='reservation.html'">Reservations</button>
+           
         </div>
     </header>
 
